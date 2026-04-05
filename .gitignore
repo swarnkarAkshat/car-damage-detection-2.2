@@ -180,5 +180,4 @@ temp/
 frontend/src/dataset/
 Resources_ModelTraining_CNN (1)/
 _obsolete_model_folder/
-*.pth
 *.pkl
