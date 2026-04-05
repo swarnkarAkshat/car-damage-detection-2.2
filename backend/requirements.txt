@@ -1,0 +1,17 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+fastapi
+uvicorn
+torch==2.4.1+cpu
+torchvision==0.19.1+cpu
+pillow
+python-multipart
+sqlalchemy
+pymysql
+passlib[bcrypt]
+python-jose[cryptography]
+google-generativeai
+groq
+fpdf2
+python-dotenv
+pydantic[email]

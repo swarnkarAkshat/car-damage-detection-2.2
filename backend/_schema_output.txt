@@ -1,0 +1,29 @@
+=== history ===
+  id  TYPE=INTEGER  nullable=False
+  user_id  TYPE=INTEGER  nullable=True
+  prediction  TYPE=VARCHAR(50)  nullable=True
+  confidence  TYPE=FLOAT  nullable=True
+  explanation  TYPE=VARCHAR(5000)  nullable=True
+  timestamp  TYPE=DATETIME  nullable=True
+=== login_events ===
+  id  TYPE=INTEGER  nullable=False
+  user_id  TYPE=INTEGER  nullable=True
+  username  TYPE=VARCHAR(50)  nullable=True
+  logged_in_at  TYPE=DATETIME  nullable=True
+=== predictions ===
+  id  TYPE=INTEGER  nullable=False
+  input  TYPE=VARCHAR(255)  nullable=True
+  damage_percentage  TYPE=INTEGER  nullable=True
+  cost  TYPE=INTEGER  nullable=True
+  created_at  TYPE=DATETIME  nullable=True
+  prediction_result  TYPE=VARCHAR(100)  nullable=True
+  explanation  TYPE=VARCHAR(1000)  nullable=True
+  report_path  TYPE=VARCHAR(255)  nullable=True
+  recommendations  TYPE=VARCHAR(1000)  nullable=True
+  user_id  TYPE=INTEGER  nullable=True
+=== users ===
+  id  TYPE=INTEGER  nullable=False
+  username  TYPE=VARCHAR(50)  nullable=True
+  email  TYPE=VARCHAR(100)  nullable=True
+  hashed_password  TYPE=VARCHAR(255)  nullable=True
+  is_active  TYPE=TINYINT  nullable=True
