@@ -1,5 +1,6 @@
 import os
 import sys
+from passlib.context import CryptContext
 
 # ==========================================
 # 0. WINDOWS DLL BOOTSTRAP (FIX FOR c10.dll)
@@ -116,6 +117,9 @@ def load_prediction_model():
     
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     MODEL_PATH = os.path.join(BASE_DIR, "saved_model.pth")
+    
+    if not os.path.exists(MODEL_PATH):
+        MODEL_PATH = os.path.join(os.path.dirname(BASE_DIR), "saved_model.pth")
     
     if not os.path.exists(MODEL_PATH):
         print(f"Warning: {MODEL_PATH} not found. Prediction will fail.")
