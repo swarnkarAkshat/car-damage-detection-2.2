@@ -8,3 +8,5 @@ torch
 torchvision
 pillow
 python-multipart
+python-jose
+python-jose[cryptography]
