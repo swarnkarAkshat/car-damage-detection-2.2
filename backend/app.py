@@ -115,7 +115,7 @@ def load_prediction_model():
     if not TORCH_AVAILABLE: return
     
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    MODEL_PATH = os.path.join(os.path.dirname(BASE_DIR), "saved_model.pth")
+    MODEL_PATH = os.path.join(BASE_DIR, "saved_model.pth")
     
     if not os.path.exists(MODEL_PATH):
         print(f"Warning: {MODEL_PATH} not found. Prediction will fail.")
